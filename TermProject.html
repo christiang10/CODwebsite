@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <title> Term Project </title>
+    <link rel="stylesheet" type="text/css" href="TermProject.css"/>
+   </head>
+   <body>
+ <nav> Menu
+	    <ul>
+	    <li> 
+	<ul>Esports
+	
+	<ul>Call of duty
+	
+	<li><ul>Web Links</li></br>
+	<a href = "http://www.callofduty.com">Call of Duty</a></br>
+	<a href = "https://www.callofduty.com/mobile"> COD Apple/Google</a></br>
+	<a href = "https://www.callofduty.com/warzonemobile">CODMW Apple/Google</a>
+	</nav>
+	
+	<br/>
+	
+	<p align="center">
+	
+	<a href = "http://www.callofduty.com">Black Ops 6</a> &nbsp &nbsp <a href ="https://www.callofduty.com/warzone"> Warzone</a>&nbsp &nbsp <a href ="https://www.callofduty.com/store/games/modernwarfare3">Modern Warfare III</a>&nbsp &nbsp <a href = "https://www.callofduty.com/mobile"> COD Mobile Dowload</a> &nbsp &nbsp <a href = "https://www.callofduty.com/warzonemobile"> Modern Warfare MD</a>
+	
+	<hr />
+	</br>
+	
+	</p>
+	
+	<p align="center">
+	<a id="randomImageLink" href="#">
+   <img id="randomImage" width="1000" height="400" alt="Random Image">
+	</a>
+       <script type="text/javascript">
+
+   
+    var pictures = [ "CODMW" , "COD" ,"CODWZ", "CODMW3", "CODBlackOps6", ];
+  // Array of corresponding links
+            var links = [
+                "http://www.callofduty.com/modernwarfare",
+                "http://www.callofduty.com",
+                "https://www.callofduty.com/warzone",
+                "https://www.callofduty.com/store/games/modernwarfare3",
+                "https://www.callofduty.com/blackops"
+            ];
+            
+            // Function to display a random image and update the link
+            function displayRandomImage() {
+                var randomIndex = Math.floor(Math.random() * pictures.length); // Random index
+                var randomImage = pictures[randomIndex] + ".jpg"; // Image source
+                document.getElementById("randomImage").src = randomImage; // Set image source
+                document.getElementById("randomImageLink").href = links[randomIndex]; // Set link
+            }
+            
+            // Load a random image on page load and update it every 2 seconds
+            window.onload = function() {
+                displayRandomImage();
+                setInterval(displayRandomImage, 2000);
+            }
+         </script>
+      </p>
+   </body>
+</html>

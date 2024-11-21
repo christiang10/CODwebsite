@@ -1,0 +1,21 @@
+<style type="text/css">
+	    body 	        { font-family: arial, sans-serif }
+	    nav			    { font-weight: regular;
+					      color: black;
+					      border: 10px solid green;
+					      text-align: center;
+					      width: 10em;
+					      background-color: green; }
+		nav ul		    { display: none;
+					      list-style: none;
+					      margin: 0;
+					      padding: 0; }
+		nav:hover ul    { display: block }
+		nav ul li       { border-top: 10px solid black;
+						  background-color: green; 
+						  width:10em;
+						  color: black; }
+		nav up li:hover  { background-color: green; }
+		a			    { text-decoration: none; }
+		</style>
+
